@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Memojis</h1>
+    </header>
+
+    <main>
+        <div class="menu" id="menu">
+            <h2>How to play!</h2>
+            <h3>The goal of the game is to find all the pairs of emojis until you complete the board.
+            </h3>
+            <marquee behavior="alternate" direction="">Choose the game mode</marquee>
+
+            <div class="buttons">
+                <div>
+                    <button onclick="gameOn(12)">12 😅</button>
+                    <button onclick="gameOn(24)">24 🤔</button>
+                </div>
+                <div>
+                    <button onclick="gameOn(36)">36 😲</button>
+                    <button onclick="gameOn(48)" class="legend">48 😱</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="front" id="front">
+
+        </div>
+
+        <div class="game-container" id="game-container">
+
+        </div>
+    </main>
+
+    <div id="overlay">
+        <div class="modal" id='modal'>
+            <div>
+                <h2 class="titulo-modal">Felicidades!!!<span onclick="modalDeactivated()"></span></h2>
+            </div>
+            <div>
+                <p class="parrafo-modal">🥳🥳🥳🥳🥳</p>
+                <!-- <button onclick="location.reload()">Play Again? 🥺</button> -->
+                <button onclick="playAgain()">Play again? 🥺</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/rub%C3%A9n-cuello-15819a23a/" target="_blank"><span></span></a></li>
+            <li><a href="https://github.com/RubenSH51" target="_blank"><span></span></a></li>
+            <li><a href="https://twitter.com/Ruben221b" target="_blank"><span></span></a></li>
+            <li><a href="https://rubensh51.github.io/mis-cursos/" target="_blank"><span></span></a></li>
+        </ul>
+    </nav>
+
+
+    <footer>
+        <!-- <marquee behavior="alternate" direction="">Follow me 😛</marquee> -->
+        <div class="social-bar">
+            <ul>
+                <li><a href="https://github.com/RubenSH51" class="Github" target="_blank"><span></span></a></li>
+                <li><a href="https://www.linkedin.com/in/rub%C3%A9n-cuello-15819a23a/" class="Linkedin" target="_blank"><span></span></a></li>
+                <li><a href="https://twitter.com/Ruben221b" class="Twitter" target="_blank"><span></span></a></li>
+                <li><a href="https://rubensh51.github.io/mis-cursos/" class="Platzi" target="_blank"><span></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
